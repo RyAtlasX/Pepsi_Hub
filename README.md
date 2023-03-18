@@ -1,7 +1,5 @@
 # Pepsi_Hub [RyAtlasX Build]
 <p align="center">
-<img src="https://cdn.discordapp.com/attachments/833062502266830869/1086451944333262888/channels4_profile.jpg" width="15%"/>
-</p>
 <img src="https://cdn.discordapp.com/icons/1073735390269288449/4a4d51774204faf847e1195e8c0810c0.webp?size=56&quot;" width="15%"/>
 </p>
 <p align="center">The Pepsi Drinker.</p>
