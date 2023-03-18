@@ -395,13 +395,32 @@ local Button = ScriptsTab:CreateButton({
     end,
  })
  local Button = HubsTab:CreateButton({
-	Name = "Domain X Superhub",
+	Name = "Penlulum Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Roblox_Scripts/main/Pendulum%20Hub.lua"))()
+    end,
+ })
+ local Button = HubsTab:CreateButton({
+	Name = "Hydroxide",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/Hydroxide"))()
+    end,
+ })
+ local Button = HubsTab:CreateButton({
+	Name = "Orca v1.1.1",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/Orca"))()
+    end,
+ })
+ local Button = HubsTab:CreateButton({
+	Name = "Domain X v1.96",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/fortnitemodder/DomainX/main/Source"))()
     end,
  })
+ 
  local Button = HubsTab:CreateButton({
-	Name = "Eclipse Hub",
+	Name = "Eclipse Hub v0.88",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Roblox_Scripts/main/Eclipse%20hub.lua"))()
     end,
