@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 local Window = Rayfield:CreateWindow({
-    Name = "Pepsi Hub V2.3",
-    LoadingTitle = "Pepsi Hub V2.3 Is loading..",
+    Name = "Pepsi Hub V2.4",
+    LoadingTitle = "Pepsi Hub V2.4 Is loading..",
     LoadingSubtitle = "by gooble#8799 and you!",
     ConfigurationSaving = {
        Enabled = false,
@@ -15,7 +15,7 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = true, -- Set this to true to use our key system
     KeySettings = {
-       Title = "Pepsi Hub V2.3 [ RyAtlasX Build ]",
+       Title = "Pepsi Hub V2.4 [ RyAtlasX Build v1.1]",
        Subtitle = "Key System",
        Note = "Join the discord (discord.gg/sxpc5eBJsA) for your key.",
        FileName = "Pepsikey",
@@ -25,7 +25,7 @@ local Window = Rayfield:CreateWindow({
     }
  })
  Rayfield:Notify({
-   Title = "Welcome to Pepsi V2.3!",
+   Title = "Welcome to Pepsi V2.4!",
    Content = "This hub is filled to the tip with content, We worked very hard on this. - Made with Love by dev and gooble.",
    Duration = 6.5,
    Image = 4483362458,
@@ -38,17 +38,17 @@ local Window = Rayfield:CreateWindow({
    },
 },
 })
- 
+
  local ScriptsTab = Window:CreateTab("Main Scripts", 4483362458) -- Title, Image
  local HubsTab = Window:CreateTab("Main Hubs", 4483362458) -- Title, Image
- local MiscTab = Window:CreateTab("Misc.", 4483362458) -- Title, Image
+ local MiscTab = Window:CreateTab("Misc", 4483362458) -- Title, Image
  local PlayerTab = Window:CreateTab("Utility", 4483362458) -- Title, Image
  local RandomTab = Window:CreateTab("Random Scripts", 4483362458) -- Title, Image
- local ChangeTab = Window:CreateTab("Changelog", 4483362458) -- Title, Image
+ local ChangeTab = Window:CreateTab("Changelogs", 4483362458) -- Title, Image
  local ControlTab = Window:CreateTab("Controls", 4483362458) -- Title, Image
  local HelpTab = Window:CreateTab("Help", 4483362458) -- Title, Image
 
-local Button = RandomTab:CreateButton({
+ local Button = RandomTab:CreateButton({
 	Name = "Legends of Speed | Auto Orbs",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/2008.lua"))()
@@ -117,6 +117,25 @@ local Button = RandomTab:CreateButton({
 
 local Paragraph = MiscTab:CreateParagraph({Title = "FE Misc Scripts", Content = "Everything here is FE and don't worry about bugs or glitches."})
 
+ local Button = MiscTab:CreateButton({
+	Name = "Dabbing Animation",
+	Callback = function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Dab-8883"))()
+	end,
+ })
+  local Button = MiscTab:CreateButton({
+	Name = "Ball Rolling Animation",
+	Callback = function()
+		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Ball-Roll-8881"))()
+	end,
+ })
+	local Button = MiscTab:CreateButton({
+   Name = "Fast animations",
+   Callback = function()
+   loadstring(game:HttpGet('https://pastebin.com/raw/8DKHE7sd'))() -- The function that takes place when the button is pressed
+   end,
+})
+
 	local Button = MiscTab:CreateButton({
    Name = "Walk on Walls",
    Callback = function()
@@ -124,23 +143,10 @@ local Paragraph = MiscTab:CreateParagraph({Title = "FE Misc Scripts", Content = 
    end,
 })
 
-
-	local Button = MiscTab:CreateButton({
-   Name = "Fast Animations",
-   Callback = function()
-   loadstring(game:HttpGet('https://pastebin.com/raw/8DKHE7sd'))() -- The function that takes place when the button is pressed
-   end,
-})
 	local Button = MiscTab:CreateButton({
    Name = "Front Flip Script",
    Callback = function()
    loadstring(game:HttpGet('https://pastebin.com/raw/8vFCxMWT'))() -- The function that takes place when the button is pressed
-   end,
-})
-	local Button = HubsTab:CreateButton({
-   Name = "Universal FE Hub",
-   Callback = function()
-   loadstring(game:HttpGet"https://raw.githubusercontent.com/WinterDinder/oldfehub/main/boronide%20level%20obfuscation%20lol")() -- The function that takes place when the button is pressed
    end,
 })
 
@@ -155,21 +161,14 @@ local Paragraph = PlayerTab:CreateParagraph({Title = "Partners Utility", Content
 
 local Paragraph = PlayerTab:CreateParagraph({Title = "Universal", Content = "Utilites"})
 
-
- local Button = HubsTab:CreateButton({
-	Name = "FE Nullware Reanimation",
+local Button = PlayerTab:CreateButton({
+	Name = "Dex v1.1.0 Alpha",
 	Callback = function()
-		loadstring(game:HttpGet(('https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/nullware'),true))()
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/Dark%20Dex%20v4")() -- The function that takes place when the button is pressed
 	end,
  })
 
 local Button = PlayerTab:CreateButton({
-	Name = "Dex v1.1.0 Alpha",
-	Callback = function()
-	loadstring(game:HttpGet"https://gist.githubusercontent.com/DinosaurXxX/b757fe011e7e600c0873f967fe427dc2/raw/ee5324771f017073fc30e640323ac2a9b3bfc550/dark%2520dex%2520v4")() -- The function that takes place when the button is pressed
-	end,
- })
- local Button = PlayerTab:CreateButton({
 	Name = "SimpleSpy v2.2",
 	Callback = function()
 	loadstring(game:HttpGet"https://raw.githubusercontent.com/RyAtlasX/test/main/Rspy")() -- The function that takes place when the button is pressed
@@ -189,14 +188,68 @@ local Button = PlayerTab:CreateButton({
 	end,
  })
 
+
+ local Button = HubsTab:CreateButton({
+	Name = "Official Pepsi Hub v2.3",
+	Callback = function()
+		loadstring(game:HttpGet("https://github.com/RyAtlasX/pepsi_hub-1/blob/main/pepsihubv2.3officialminibeta.txt"))()
+	end,
+ })
+
+ local Paragraph = HubsTab:CreateParagraph({Title = "Hubs", Content = "Universal script hubs."})
+
+ local Button = HubsTab:CreateButton({
+	Name = "FE Nullware Reanimation",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/nullware'),true))()
+	end,
+ })
+
+ local Button = HubsTab:CreateButton({
+	Name = "FE Energize GUI",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/Energize'),true))()
+	end,
+ })
+
 local Button = HubsTab:CreateButton({
 	Name = "FE Sussy Hub",
 	Callback = function()
 		loadstring(game:HttpGet(('https://gist.githubusercontent.com/Nilrogram/8b0c8bd710be142f383c71f79279752c/raw/e4fb01a7de7cd498bb53270d2ad191dfab268a88/FE%2520SussyHub'),true))(); -- The function that takes place when the button is pressed
 	end,
  })
+ local Paragraph = ScriptsTab:CreateParagraph({Title = "Universal", Content = "FE Scripts."})
+
+ local Button = ScriptsTab:CreateButton({
+	Name = "FE Grandmasters",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/Grandmasters%20hub2'),true))()
+	end,
+ })
+
+ local Button = ScriptsTab:CreateButton({
+	Name = "FE Neko Maid",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/RyAtlasX/Roblox_Scripts/main/neko%20maid%20v1.lua'),true))()
+	end,
+ })
+
+ local Button = ScriptsTab:CreateButton({
+	Name = "FE Nameless Animations",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/Nameless%20animation%20scripts1'),true))()
+	end,
+ })
+
+ local Button = ScriptsTab:CreateButton({
+	Name = "FE Mr.Chill",
+	Callback = function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/RyAtlasX/test/main/Mr%20Chill'),true))()
+	end,
+ })
+
 local Button = ScriptsTab:CreateButton({
-	Name = "Chat Bypass Script",
+	Name = "FE Chat Bypass Script",
 	Callback = function()
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/vqmpjay/scripts/main/vadriftsbyp_krnl_fluxus_support'),true))()
 	end,
@@ -257,11 +310,19 @@ local Button = ScriptsTab:CreateButton({
  })
 
 local Button = PlayerTab:CreateButton({
-	Name = "FE Infinite Yield",
+	Name = "Infinite Yield v5.9.3",
 	Callback = function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 	end,
  })
+
+local Button = PlayerTab:CreateButton({
+	Name = "CMD X v1.9.9F",
+	Callback = function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/CMD-X'))()
+	end,
+ })
+
 local Button = ScriptsTab:CreateButton({
 	Name = "Anti Kick",
 	Callback = function()
@@ -278,24 +339,6 @@ local Button = ScriptsTab:CreateButton({
 	Name = "FE Chat Spy",
 	Callback = function()
 		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Chat-Troller-8885"))()
-	end,
- })
-  local Button = ScriptsTab:CreateButton({
-	Name = "Script Search",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/madonchik123/USL/main/main.lua"))()
-	end,
- })
- local Button = ScriptsTab:CreateButton({
-	Name = "FE Dabbing Animation",
-	Callback = function()
-		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Dab-8883"))()
-	end,
- })
-  local Button = ScriptsTab:CreateButton({
-	Name = "FE Ball Rolling Animation",
-	Callback = function()
-		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Ball-Roll-8881"))()
 	end,
  })
    local Button = ScriptsTab:CreateButton({
@@ -317,9 +360,15 @@ local Button = ScriptsTab:CreateButton({
 	end,
  })
    local Button = ScriptsTab:CreateButton({
-	Name = "Chill GUI | Float FE",
+	Name = "FE Chill GUI | Float",
 	Callback = function()
 		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Chill-Script-R6-and-R15-5925", true))()
+	end,
+ })
+ local Button = HubsTab:CreateButton({
+	Name = "Owl Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://github.com/RyAtlasX/Atlas_hub/blob/main/Owl%20hub"))()
 	end,
  })
    local Button = HubsTab:CreateButton({
@@ -351,6 +400,27 @@ local Button = ScriptsTab:CreateButton({
 	Callback = function()
 		loadstring(game:HttpGet(('https://pastefy.ga/tWBTcE4R/raw'),true))()
     end,
+ })
+
+ local Button = HubsTab:CreateButton({
+    Name = "Universal FE Hub",
+    Callback = function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/WinterDinder/oldfehub/main/boronide%20level%20obfuscation%20lol")() -- The function that takes place when the button is pressed
+    end,
+ })
+ 
+     local Button = HubsTab:CreateButton({
+    Name = "Ice Hub",
+    Callback = function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven")() -- The function that takes place when the button is pressed
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+	Name = "ScriptBlox | SearchBar",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/madonchik123/USL/main/main.lua"))()
+	end,
  })
  local Button = HubsTab:CreateButton({
 	Name = "Simplity V2",
@@ -394,6 +464,7 @@ local Button = ScriptsTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/KattWasTaken/pepsi_hub/main/sploinkyesp.odd.txt"))()
     end,
  })
+
  local Button = HubsTab:CreateButton({
 	Name = "Penlulum Hub",
 	Callback = function()
@@ -425,10 +496,10 @@ local Button = ScriptsTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Roblox_Scripts/main/Eclipse%20hub.lua"))()
     end,
  })
-local Paragraph = ChangeTab:CreateParagraph({Title = "Beta Changelog", Content = "Hello, And welcome to the first public release if pepsi v2! We have switched UI libraries, Added tons more scripts, and added a better key system, Go enjoy the script!"})
-local Paragraph = ChangeTab:CreateParagraph({Title = "Mini Update 1: Pendulum", Content = "We added pendulum hub, We fixed the chat bypass and the dab script, and removed tall script because it didnt work. patches to the key system were also made."})
-local Paragraph = ChangeTab:CreateParagraph({Title = "Update 2: Quality of Hub", Content = "Various QoL Improvments, NiHo hub is in W.I.P, Added Chat Spammer and various qol scripts."})
-local Paragraph = ChangeTab:CreateParagraph({Title = "Update 2.1: Fly into the sky", Content = "Added collision enabler, Anti fling, and a touch fling script (X to enable.)"})
 local Paragraph = ControlTab:CreateParagraph({Title = "Touch Fling Controls", Content = "To use touch fling, Press the (X) Key, It will stop animations, and you can fling anybody who doesnt have anti fling enabled."})
-local Paragraph = ControlTab:CreateParagraph({Title = "FEFlip Controls", Content = "Use the (Z) Key to backflip, the (X) Key to front flip, and the (C) Key to infinite jump, Does not work with touch fling, Resetting does not disable this script, to disable it, rejoin your game."})
+local Paragraph = ControlTab:CreateParagraph({Title = "FE Flip Controls", Content = "Use the (Z) Key to backflip, the (X) Key to front flip, and the (C) Key to infinite jump, Does not work with touch fling, Resetting does not disable this script, to disable it, rejoin your game."})
+local Paragraph = ControlTab:CreateParagraph({Title = "Neko Maid Controls", Content = "Attack: Z X | Taunt: R T | Movement: F"})
+local Paragraph = ControlTab:CreateParagraph({Title = "FE Grandmaster Controls", Content = "Attack: Z X C V | Taunt: T | Movement: Q E"})
+local Paragraph = ChangeTab:CreateParagraph({Title = "Release v2.3 ", Content = "Remade the whole Pepsi Hub."})
+local Paragraph = ChangeTab:CreateParagraph({Title = "Update 2.4", Content = "Added auto player piano, Added Owl hub"})
 local Paragraph = HelpTab:CreateParagraph({Title = "What is netless?", Content = "When you use FE scripts, It relies on taking your limbs and rearranging them, Sometimes it will fail, and the script wont work, Netless prevents this."})
