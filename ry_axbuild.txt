@@ -15,7 +15,7 @@ local Window = Rayfield:CreateWindow({
     },
     KeySystem = true, -- Set this to true to use our key system
     KeySettings = {
-       Title = "Pepsi Hub V2.4 [ RyAtlasX Build v1.1]",
+       Title = "Pepsi Hub V2.4 [ RyAtlasX Build v1.1 ]",
        Subtitle = "Key System",
        Note = "Join the discord (discord.gg/sxpc5eBJsA) for your key.",
        FileName = "Pepsikey",
