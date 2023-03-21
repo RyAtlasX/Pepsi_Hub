@@ -55,6 +55,12 @@ local Window = Rayfield:CreateWindow({
     end,
  })
  local Button = RandomTab:CreateButton({
+	Name = "Muscle Legends | V.G",
+	Callback = function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Atlas_hub/main/Muscle-Legends.txt"))()
+    end,
+ })
+ local Button = RandomTab:CreateButton({
 	Name = "VAPE v4 | Bedwars",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Script-Storages/main/VAPE%20V4%20%5Bbedwar%5D"))()
@@ -188,11 +194,12 @@ local Button = PlayerTab:CreateButton({
 	end,
  })
 
+ local Paragraph = HubsTab:CreateParagraph({Title = "Partner Hubs", Content = "These Hub are created by my partners."})
 
  local Button = HubsTab:CreateButton({
-	Name = "Official Pepsi Hub v2.3",
+	Name = "Pepsi Hub v2.3",
 	Callback = function()
-		loadstring(game:HttpGet("https://github.com/RyAtlasX/pepsi_hub-1/blob/main/pepsihubv2.3officialminibeta.txt"))()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/test/main/Pepsi%20Hub%20%5Bremade%5D"))()
 	end,
  })
 
@@ -365,12 +372,6 @@ local Button = ScriptsTab:CreateButton({
 		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-FE-Chill-Script-R6-and-R15-5925", true))()
 	end,
  })
- local Button = HubsTab:CreateButton({
-	Name = "Owl Hub",
-	Callback = function()
-		loadstring(game:HttpGet("https://github.com/RyAtlasX/Atlas_hub/blob/main/Owl%20hub"))()
-	end,
- })
    local Button = HubsTab:CreateButton({
 	Name = "Pendulum Reanimation Hub",
 	Callback = function()
@@ -466,6 +467,20 @@ local Button = ScriptsTab:CreateButton({
  })
 
  local Button = HubsTab:CreateButton({
+	Name = "Owl Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://github.com/RyAtlasX/Atlas_hub/blob/main/Owl%20hub"))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
+	Name = "Ez Hub",
+	Callback = function()
+		loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Ez%20Hub.txt"))()
+    end,
+ })
+
+ local Button = HubsTab:CreateButton({
 	Name = "Penlulum Hub",
 	Callback = function()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Roblox_Scripts/main/Pendulum%20Hub.lua"))()
@@ -496,7 +511,7 @@ local Button = ScriptsTab:CreateButton({
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/RyAtlasX/Roblox_Scripts/main/Eclipse%20hub.lua"))()
     end,
  })
-local Paragraph = ControlTab:CreateParagraph({Title = "Touch Fling Controls", Content = "To use touch fling, Press the (X) Key, It will stop animations, and you can fling anybody who doesnt have anti fling enabled."})
+loclocal Paragraph = ControlTab:CreateParagraph({Title = "Touch Fling Controls", Content = "To use touch fling, Press the (X) Key, It will stop animations, and you can fling anybody who doesnt have anti fling enabled."})
 local Paragraph = ControlTab:CreateParagraph({Title = "FE Flip Controls", Content = "Use the (Z) Key to backflip, the (X) Key to front flip, and the (C) Key to infinite jump, Does not work with touch fling, Resetting does not disable this script, to disable it, rejoin your game."})
 local Paragraph = ControlTab:CreateParagraph({Title = "Neko Maid Controls", Content = "Attack: Z X | Taunt: R T | Movement: F"})
 local Paragraph = ControlTab:CreateParagraph({Title = "FE Grandmaster Controls", Content = "Attack: Z X C V | Taunt: T | Movement: Q E"})
